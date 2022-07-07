@@ -7,9 +7,9 @@ resource "aws_instance" "myawsserver" {
   key_name = "raman-import"
 
   tags = {
-    Name = "Raman-DevOps-Synechron-batch-server"
+    Name = "Deepa-DevOps-Synechron-batch-server"
     env = "development"
-    owner = "Raman Khanna"
+    owner = "Deepa Huddar"
   }
   provisioner "local-exec" {
     command = "echo The servers IP address is ${self.public_ip} && echo ${self.public_ip} > /tmp/inv"
